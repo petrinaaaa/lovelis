@@ -1,40 +1,105 @@
 <!DOCTYPE html>
 <html>
 	<style type="text/css">
-		* {font-family: helvetica;
+		* {
+			font-family: helvetica;
 			text-align: center;
+			background-color: #c6d379;
 		}
-		h1 {color: #744567;
+
+		h1 {
+			color: #744567;
+			font-size: 40px;
 		}
 		
-		h2 {color: #c6d379;
-			font-size: 30px;
+		h2 {
+			color: #5a7124;
+			font-size: 35px;
 		}
 
-		p {color: #c6d379;
+		p {
+			color: #5a7124;
+			font-size: 20px;
 		}
 
-		#rectangle {width: 200px;
-					height: 15px;
-					border: 5px;
-					border-color: #c6d379;
-					background-color: #c6d379;
-					align-items: center;
-					padding-right: 100px;
+		#askLis {border: 3px solid #744567;
+				background-color: #cc8b9e;
+				font-size: 20px;
+				border-radius: 3px;
+				width: 130px;
+				height: 50px;
 		}
+
+		#logo {width: 500px;
+				height: 300px;
+		}
+
+		#chat {width: 500px;
+				height: 40px;
+				background-color: #f4f4f4;
+		}
+
+		#signOff {
+			color: #744567;
+			font-weight: bold;
+			font-size: 25px;
+		}
+
+		#response1 {
+			text-align: left;
+			padding-right: 300px;
+			padding-left: 300px;
+		}
+
+		#signOff2 {
+			text-align: right;
+			color: #744567;
+		}
+
 	</style>
 <head>
-	<title>Love,Lis</title>
+	<title>Love, Lis</title>
 </head>
 <body>
+	<img id ="logo" src=Lovelis.png>
 	<h1>Hi, there!</h1>
-		<h2>I'm Lis!</h2>
-		<p>Ask me anything about health and wellness. Just type in your question in the green box below. 
+	<h2>I'm Lis!</h2>
+	<p>Ask me anything about health and wellness. 
+	<br>
+	Just type in your question in the green box below. 
+	<br>
+
+	<p id="signOff"> 
+	Love, Lis.
+	</p>
+
+	<br>
+	<br>
+
+
+	<input name="chat" id="chat" value=""></input>
+	<br>
+	<br>
+
+	</div>
+	<input id="askLis" name="submit" value="Ask Lis!" onclick="showDiv()" />
+	<script>
+	function showDiv() {
+	document.getElementById('response1').style.display = "block";
+	}
+	</script>
 		<br>
-		Love, Lis.</p>
+		<br>
+		<div id="response1"  style="display:none;" class="answer_list" >
+		In women, monthly hormonal changes cause the lining of the womb (called the endometrial tissue) to thicken in preparation for pregnancy. If the woman does not become pregnant, the cells naturally break down and “bleed” out of the body as part of the menstrual cycle.
 		<br>
 		<br>
-		<div id="rectangle"></div>
-		<h3 id = "textbox">Type your question here!</h3>
+		Endometriosis occurs when these womb cells develop elsewhere in the body. They go through the same monthly cycle, but have no outlet to leave the body once they break down. This causes inflammation (swelling) and potentially the formation of scar tissue in the affected areas.
+		<br>
+
+		<p id="signOff2">
+		Love, Lis
+		</p>
+	
 </body>
 </html>
